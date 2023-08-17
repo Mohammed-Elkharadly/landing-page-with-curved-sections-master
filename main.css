@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    overflow: hidden;
+}
+
+main .header .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 3rem 15rem;
+}
+
+main .header .title img {
+    width: 20rem;
+}
+
+@media (max-width: 37.5em) {
+    main .header .title img {
+        width: 10rem;
+    }
+}
+
+main .header .title a {
+    color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 2rem;
+    padding: .4rem 1.3rem;
+}
+
+@media (max-width: 37.5em) {
+    main .header .title a {
+        font-size: 1.1rem;
+        padding: .3rem 1rem;
+    }
+}
+
+main .header article {
+    text-align: center;
+    
+}
+
+main .header article h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: hsl(192, 100%, 9%);
+}
+
+@media (max-width: 37.5em) {
+    main .header article h1 {
+        font-size: 3rem;
+    }
+}
+
+main .header article p {
+    font-size: 1.8rem;
+    width: 55rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: hsl(192, 100%, 9%);
+}
+
+@media (max-width: 37.5em) {
+    main .header article p  {
+        font-size: 1.4rem;
+        width: 30rem;
+    }
+}
+
+main .header article a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    padding: 2rem 10rem;
+    border-radius: 5vh;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    transition: .5s;
+}
+
+@media (max-width: 37.5em) {
+    main .header article a  {
+        font-size: 1.4rem;
+        padding: 1rem 4rem;
+        margin: 5rem auto;
+    }
+}
+
+main .header article a:hover {
+    background-color:  hsl(321, 100%, 78%)
+}
+
+main .header .image {
+    display: block;
+    width: 65%;
+    margin: 5rem auto;
+}
+
+main section .number {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 6rem auto;
+}
+
+@media (max-width: 37.5em) {
+    main section .number {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+main section .number .likes img {
+    width: 3rem;
+}
+
+main section .number .likes span {
+    display: block;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+main section .number .likes p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsl(0, 6%, 59%);
+}
+
+main section .info {
+    display: flex;
+    align-items: center;
+    margin: 20rem 0;
+    padding: 5rem;
+    gap: 3rem;
+    position: relative;
+}
+
+@media (max-width: 46.3em) {
+    main section .info {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+main section .one {
+    background-color: hsl(207, 100%, 98%);
+}
+
+main section .one::before {
+    content: url(images/bg-section-top-desktop-1.svg);
+    position: absolute;
+    top: -16.5rem;
+    left: 0px;
+}
+
+@media (max-width: 24.4em) {
+    main section .one::before {
+        content: url(images/bg-section-top-mobile-1.svg);
+        top: -11.2rem;
+    }
+}
+
+main section .one::after {
+    content: url(images/bg-section-bottom-desktop-1.svg);
+    position: absolute;
+    bottom: -14.2rem;
+    left: 0;
+}
+
+@media (max-width: 24.4em) {
+    main section .one::after {
+        content: url(images/bg-section-bottom-mobile-1.svg);
+        bottom: -5.5rem;
+    }
+}
+
+main section .two {
+    background-color: hsl(207, 100%, 98%);
+}
+
+main section .two::before {
+    content: url(images/bg-section-top-desktop-2.svg);
+    position: absolute;
+    top: -15.5rem;
+    left: 0px;
+}
+
+@media (max-width: 24.4em) {
+    main section .two::before {
+        content: url(images/bg-section-top-mobile-2.svg);
+        top: -10.3rem;
+    }
+}
+
+main section .two::after {
+    content: url(images/bg-section-bottom-desktop-2.svg);
+    position: absolute;
+    bottom: -14.2rem;
+    left: 0;
+}
+
+@media (max-width: 24.4em) {
+    main section .two::after {
+        content: url(images/bg-section-bottom-mobile-2.svg);
+        bottom: -10.4rem;
+    }
+}
+
+main section .info img {
+    width: 50%;
+}
+
+@media (max-width: 46.3em) {
+    main section .info img {
+        width: 70%;
+        display: block;
+        margin: 4rem 0;
+    }
+}
+
+main section .info article h1 {
+    font-size: 2.3rem;
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 2rem;
+}
+
+main section .info article p {
+    font-size: 1.8rem;
+    width: 100%;
+    color: hsl(192, 100%, 9%);
+}
+
+@media (max-width: 37.5em) {
+    main section .info article p {
+        font-size: 1.4rem;
+    }
+}
+
+main section .text {
+    margin: 5rem 0;
+}
+
+main section .text h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    color: hsl(192, 100%, 9%);
+}
+
+@media (max-width: 28.2em) {
+    main section .text h1 {
+        font-size: 3rem;
+        width: 30rem;
+        margin: 0 auto 3.5rem;
+    }
+}
+
+main section .text a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    padding: 2rem 10rem;
+    border-radius: 5vh;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    transition: .5s;
+}
+
+@media (max-width: 28.2em) {
+    main section .text a {
+        padding: 1rem 5rem;
+    }
+}
+
+main section .text a:hover {
+    background-color:  hsl(321, 100%, 78%)
+}
+
+main footer {
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    padding: 10rem;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 30rem;
+}
+
+@media (max-width: 53em) {
+    main footer {
+        flex-direction: column-reverse;
+        
+        gap: 15rem;
+    }
+}
+
+@media (max-width: 33.5em) {
+    main footer {
+        padding: 2rem;
+    }
+}    
+main footer::before {
+    content: url(images/bg-footer-top-desktop.svg);
+    position: absolute;
+    top: -15.5rem;
+    left: 0;
+}
+
+@media (max-width: 24.4em) {
+    main footer::before {
+        content: url(images/bg-footer-top-mobile.svg);
+        top: -53px;
+    }
+}
+
+main footer .contact-information > img {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 7vh;
+    display: block;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+main footer .contact-information p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    width: 33.2rem;
+    margin-bottom: 2rem;
+}
+
+main footer .contact {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+main footer .contact span {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+}
+
+main footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 6rem 0 0;
+}
+
+main footer .icons i {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+    transition: .5s;
+}
+
+main footer .icons i:hover {
+    color: hsl(210, 100%, 58%);
+}
+
+main footer .subscribe {
+    flex-basis: 60%;
+}
+
+main footer .subscribe h1 {
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+}
+
+main footer .subscribe p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    width: 33.2rem;
+    margin-bottom: 2rem;
+}
+
+main footer .subscribe form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+@media (max-width: 24.4em) {
+    main footer .subscribe form {
+        flex-direction: column;
+    }
+}
+
+main footer .subscribe form input {
+    padding: .8rem;
+    width: 60%;
+    border-radius: .5rem;
+    outline: none;
+}
+
+@media (max-width: 24.4em) {
+    main footer .subscribe form input {
+        width: 100%;
+    }
+}
+
+main footer .subscribe form input:focus {
+    border: 1px solid hsl(0, 100%, 63%);
+}
+
+main footer .subscribe form a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    padding: .6rem 2.4rem;
+    border-radius: .5rem;
+    display: block;
+    width: fit-content;
+    transition: .5s;
+}
+
+@media (max-width: 24.4em) {
+    main footer .subscribe form a {
+        margin-left: auto;
+    }
+}
+
+main footer .subscribe form a:hover {
+    background-color:  hsl(321, 100%, 78%)
+}
+
+main footer .subscribe form span {
+    position: absolute;
+    bottom: -25px;
+    font-size: 1.2rem;
+    left: 3px;
+    color: hsl(0, 100%, 63%);
+    display: none;
+}
+
+@media (max-width: 24.4em) {
+    main footer .subscribe form span {
+        bottom: 20px;
+    }
+}
+
+main footer .subscribe form input:focus ~ span{
+    display: block;
+}
