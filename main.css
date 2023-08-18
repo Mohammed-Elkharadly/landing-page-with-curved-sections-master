@@ -17,6 +17,7 @@ html {
 
 h1 {
     font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
 }
 
 p, span {
@@ -31,7 +32,7 @@ main .header .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 3rem 15rem;
+    padding: 3rem 3rem 25rem;
 }
 
 main .header .title img {
@@ -66,7 +67,7 @@ main .header article {
 }
 
 main .header article h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 1.5rem;
     color: hsl(192, 100%, 9%);
 }
@@ -80,10 +81,12 @@ main .header article h1 {
 main .header article p {
     font-size: 1.8rem;
     width: 55rem;
-    margin: auto;
+    margin: auto ;
+    padding-bottom: 3rem;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     color: hsl(192, 100%, 9%);
+    font-weight: 600;
 }
 
 @media (max-width: 37.5em) {
@@ -121,14 +124,14 @@ main .header article a:hover {
 main .header .image {
     display: block;
     width: 65%;
-    margin: 5rem auto;
+    margin: 7rem auto;
 }
 
 main section .number {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 6rem auto;
+    margin: 8rem auto;
 }
 
 @media (max-width: 37.5em) {
@@ -144,13 +147,14 @@ main section .number .likes img {
 
 main section .number .likes span {
     display: block;
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: bold;
+    color: hsl(192, 100%, 9%);
 }
 
 main section .number .likes p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: hsl(0, 6%, 59%);
 }
 
@@ -248,7 +252,7 @@ main section .info img {
 }
 
 main section .info article h1 {
-    font-size: 2.3rem;
+    font-size: 3.3rem;
     color: hsl(192, 100%, 9%);
     margin-bottom: 2rem;
 }
@@ -266,7 +270,7 @@ main section .info article p {
 }
 
 main section .text {
-    margin: 5rem 0;
+    margin: 30rem 0;
 }
 
 main section .text h1 {
@@ -316,7 +320,7 @@ main footer {
     margin-top: 30rem;
 }
 
-@media (max-width: 53em) {
+@media (max-width: 60em) {
     main footer {
         flex-direction: column-reverse;
         
@@ -380,6 +384,7 @@ main footer .icons {
 main footer .icons i {
     font-size: 3rem;
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
     transition: .5s;
 }
 
@@ -404,7 +409,7 @@ main footer .subscribe p {
     margin-bottom: 2rem;
 }
 
-main footer .subscribe form {
+main footer .subscribe form label {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -412,34 +417,34 @@ main footer .subscribe form {
 }
 
 @media (max-width: 24.4em) {
-    main footer .subscribe form {
+    main footer .subscribe form label {
         flex-direction: column;
     }
 }
 
-main footer .subscribe form input {
-    padding: .8rem;
-    width: 60%;
+main footer .subscribe form label input {
+    padding: 1rem;
+    width: 32.3rem;
     border-radius: .5rem;
     outline: none;
 }
 
 @media (max-width: 24.4em) {
-    main footer .subscribe form input {
+    main footer .subscribe form label input {
         width: 100%;
     }
 }
 
-main footer .subscribe form input:focus {
+main footer .subscribe form label input:focus {
     border: 1px solid hsl(0, 100%, 63%);
 }
 
-main footer .subscribe form a {
+main footer .subscribe form label a {
     font-size: 1.4rem;
     text-decoration: none;
     background-color: hsl(322, 100%, 66%);
     color: hsl(0, 0%, 100%);
-    padding: .6rem 2.4rem;
+    padding: .9rem 2.4rem;
     border-radius: .5rem;
     display: block;
     width: fit-content;
@@ -447,16 +452,16 @@ main footer .subscribe form a {
 }
 
 @media (max-width: 24.4em) {
-    main footer .subscribe form a {
+    main footer .subscribe form label a {
         margin-left: auto;
     }
 }
 
-main footer .subscribe form a:hover {
+main footer .subscribe form label a:hover {
     background-color:  hsl(321, 100%, 78%)
 }
 
-main footer .subscribe form span {
+main footer .subscribe form label span {
     position: absolute;
     bottom: -25px;
     font-size: 1.2rem;
@@ -466,11 +471,11 @@ main footer .subscribe form span {
 }
 
 @media (max-width: 24.4em) {
-    main footer .subscribe form span {
+    main footer .subscribe form label span {
         bottom: 20px;
     }
 }
 
-main footer .subscribe form input:focus ~ span{
+main footer .subscribe form label input:focus ~ span{
     display: block;
 }
